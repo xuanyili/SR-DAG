@@ -1,0 +1,6 @@
+model_checkpoint_path: "actor.ckpt"
+all_model_checkpoint_paths: "tmp.ckpt-8000"
+all_model_checkpoint_paths: "tmp.ckpt-12000"
+all_model_checkpoint_paths: "tmp.ckpt-16000"
+all_model_checkpoint_paths: "tmp.ckpt-20000"
+all_model_checkpoint_paths: "actor.ckpt"

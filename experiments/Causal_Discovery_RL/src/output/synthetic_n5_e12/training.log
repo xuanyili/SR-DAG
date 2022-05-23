@@ -1,0 +1,408 @@
+2022-04-27 14:51:55,517 INFO - helpers.log_helper - Completed configuring logger.
+2022-04-27 14:51:55,524 INFO - __main__ - Python version is 3.6.13
+2022-04-27 14:51:55,524 INFO - __main__ - Current commit of code: ___
+2022-04-27 14:51:55,525 WARNING - tensorflow - From /home/lixuanyi/code/bnsl_rl/experiments/Causal_Discovery_RL/src/helpers/tf_utils.py:18: The name tf.set_random_seed is deprecated. Please use tf.compat.v1.set_random_seed instead.
+
+2022-04-27 14:51:55,525 INFO - __main__ - Configuration parameters: {'encoder_type': 'TransformerEncoder', 'hidden_dim': 64, 'num_heads': 16, 'num_stacks': 6, 'residual': False, 'decoder_type': 'SingleLayerDecoder', 'decoder_activation': 'tanh', 'decoder_hidden_dim': 16, 'use_bias': False, 'use_bias_constant': False, 'bias_initial_value': False, 'batch_size': 64, 'input_dimension': 64, 'max_length': 5, 'data_size': 4096, 'read_data': True, 'data_path': 'data/synthetic_n5_e12', 'output_path': 'synthetic_n5_e12', 'normalize': False, 'transpose': True, 'score_type': 'BIC', 'reg_type': 'LR', 'lambda_iter_num': 1000, 'lambda_flag_default': True, 'score_bd_tight': True, 'lambda1_update': 1, 'lambda2_update': 10, 'score_lower': 0.0, 'score_upper': 0.0, 'lambda2_lower': -1, 'lambda2_upper': -1, 'seed': 8, 'nb_epoch': 20000, 'lr1_start': 0.001, 'lr1_decay_step': 5000, 'lr1_decay_rate': 0.96, 'alpha': 0.99, 'init_baseline': -1.0, 'temperature': 3.0, 'C': 10.0, 'l1_graph_reg': 0.0, 'inference_mode': True, 'restore_model': False, 'save_to': '20/model', 'restore_from': '20/model', 'log_dir': 'summary/20/repo', 'verbose': False, 'save_model_path': 'output/synthetic_n5_e12/model', 'summary_dir': 'output/synthetic_n5_e12/summary', 'plot_dir': 'output/synthetic_n5_e12/plot', 'graph_dir': 'output/synthetic_n5_e12/graph'}
+2022-04-27 14:51:55,547 INFO - __main__ - Original sl: 0.010051310226159004, su: 0.2049962129280064, strue: 0.1108726091994867
+2022-04-27 14:51:55,547 INFO - __main__ - Transfomed sl: 0.010051310226159004, su: 0.2049962129280064, lambda2: 0.01, true: 2.5858921566040074
+2022-04-27 14:51:55,555 WARNING - tensorflow - From /home/lixuanyi/code/bnsl_rl/experiments/Causal_Discovery_RL/src/models/actor_graph.py:52: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+2022-04-27 14:51:55,557 WARNING - tensorflow - From /home/lixuanyi/code/bnsl_rl/experiments/Causal_Discovery_RL/src/models/actor_graph.py:65: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+2022-04-27 14:51:55,557 WARNING - tensorflow - 
+The TensorFlow contrib module will not be included in TensorFlow 2.0.
+For more information, please see:
+  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
+  * https://github.com/tensorflow/addons
+  * https://github.com/tensorflow/io (for I/O related ops)
+If you depend on functionality not listed there, please file an issue.
+
+2022-04-27 14:51:55,559 WARNING - tensorflow - From /home/lixuanyi/code/bnsl_rl/experiments/Causal_Discovery_RL/src/models/encoder/transformer_encoder.py:97: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+2022-04-27 14:51:56,172 WARNING - tensorflow - From /home/lixuanyi/code/bnsl_rl/experiments/Causal_Discovery_RL/src/models/actor_graph.py:14: The name tf.summary.scalar is deprecated. Please use tf.compat.v1.summary.scalar instead.
+
+2022-04-27 14:51:56,198 WARNING - tensorflow - From /home/lixuanyi/code/bnsl_rl/experiments/Causal_Discovery_RL/src/models/actor_graph.py:124: The name tf.get_collection is deprecated. Please use tf.compat.v1.get_collection instead.
+
+2022-04-27 14:51:56,198 WARNING - tensorflow - From /home/lixuanyi/code/bnsl_rl/experiments/Causal_Discovery_RL/src/models/actor_graph.py:124: The name tf.GraphKeys is deprecated. Please use tf.compat.v1.GraphKeys instead.
+
+2022-04-27 14:51:56,203 WARNING - tensorflow - From /home/lixuanyi/code/bnsl_rl/experiments/Causal_Discovery_RL/src/models/actor_graph.py:131: The name tf.assign is deprecated. Please use tf.compat.v1.assign instead.
+
+2022-04-27 14:51:56,205 INFO - tensorflow - Summary name average baseline is illegal; using average_baseline instead.
+2022-04-27 14:51:56,205 WARNING - tensorflow - From /home/lixuanyi/code/bnsl_rl/experiments/Causal_Discovery_RL/src/models/actor_graph.py:137: The name tf.train.exponential_decay is deprecated. Please use tf.compat.v1.train.exponential_decay instead.
+
+2022-04-27 14:51:56,208 WARNING - tensorflow - From /home/lixuanyi/code/bnsl_rl/experiments/Causal_Discovery_RL/src/models/actor_graph.py:140: The name tf.train.AdamOptimizer is deprecated. Please use tf.compat.v1.train.AdamOptimizer instead.
+
+2022-04-27 14:51:58,056 WARNING - tensorflow - From /home/lixuanyi/code/bnsl_rl/experiments/Causal_Discovery_RL/src/models/actor_graph.py:161: The name tf.losses.mean_squared_error is deprecated. Please use tf.compat.v1.losses.mean_squared_error instead.
+
+2022-04-27 14:51:59,476 WARNING - tensorflow - From /home/lixuanyi/code/bnsl_rl/experiments/Causal_Discovery_RL/src/models/actor_graph.py:62: The name tf.summary.merge_all is deprecated. Please use tf.compat.v1.summary.merge_all instead.
+
+2022-04-27 14:51:59,477 INFO - __main__ - Finished creating training dataset, actor model and reward class
+2022-04-27 14:51:59,477 WARNING - tensorflow - From main.py:125: The name tf.global_variables is deprecated. Please use tf.compat.v1.global_variables instead.
+
+2022-04-27 14:51:59,478 WARNING - tensorflow - From main.py:126: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+2022-04-27 14:51:59,527 INFO - __main__ - Starting session...
+2022-04-27 14:51:59,527 WARNING - tensorflow - From main.py:129: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+2022-04-27 14:51:59,527 WARNING - tensorflow - From main.py:131: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+2022-04-27 14:52:00,076 WARNING - tensorflow - From main.py:133: The name tf.global_variables_initializer is deprecated. Please use tf.compat.v1.global_variables_initializer instead.
+
+2022-04-27 14:52:01,145 INFO - __main__ - Shape of actor.input: [64  5 64]
+2022-04-27 14:52:01,146 WARNING - tensorflow - From main.py:160: The name tf.summary.FileWriter is deprecated. Please use tf.compat.v1.summary.FileWriter instead.
+
+2022-04-27 14:52:01,804 WARNING - tensorflow - Issue encountered when serializing variables.
+Type is unsupported, or the types of the items don't match field type in CollectionDef. Note this is a warning and probably safe to ignore.
+tf.float32 has type DType, but expected one of: int, long, bool
+2022-04-27 14:52:01,805 WARNING - tensorflow - Issue encountered when serializing trainable_variables.
+Type is unsupported, or the types of the items don't match field type in CollectionDef. Note this is a warning and probably safe to ignore.
+tf.float32 has type DType, but expected one of: int, long, bool
+2022-04-27 14:52:01,971 INFO - __main__ - Starting training.
+2022-04-27 14:52:06,313 INFO - __main__ - [iter 1] reward_batch: -2.2443313598632812, max_reward: -0.8151194701870279, max_reward_batch: -0.8151194701870279
+2022-04-27 14:52:24,474 INFO - __main__ - [iter 500] reward_batch: -0.7348296046257019, max_reward: -0.4939576712590269, max_reward_batch: -0.6094688364573868
+2022-04-27 14:52:38,432 INFO - __main__ - [iter 1000] lambda1 1, upper 5, lambda2 0.01, upper 0.01, score_min 0.20940995127440218, cyc_min 28.454771998462476
+2022-04-27 14:52:38,434 INFO - __main__ - before pruning: fdr 0.5882352941176471, tpr 1.0, fpr 3.3333333333333335, shd 9, nnz 17
+2022-04-27 14:52:38,434 INFO - __main__ - after  pruning: fdr 0.3333333333333333, tpr 0.2857142857142857, fpr 0.3333333333333333, shd 6, nnz 3
+2022-04-27 14:52:38,465 INFO - __main__ - [iter 1000] reward_batch: -1.7295323610305786, max_reward: -1.4939576712590268, max_reward_batch: -1.7190329414457797
+2022-04-27 14:52:51,990 INFO - __main__ - [iter 1500] reward_batch: -1.719032883644104, max_reward: -1.4939576712590268, max_reward_batch: -1.7190329414457797
+2022-04-27 14:53:05,650 INFO - __main__ - [iter 2000] lambda1 2, upper 5, lambda2 0.01, upper 0.01, score_min 0.20940995127440218, cyc_min 28.454771998462476
+2022-04-27 14:53:05,653 INFO - __main__ - before pruning: fdr 0.5882352941176471, tpr 1.0, fpr 3.3333333333333335, shd 9, nnz 17
+2022-04-27 14:53:05,653 INFO - __main__ - after  pruning: fdr 0.3333333333333333, tpr 0.2857142857142857, fpr 0.3333333333333333, shd 6, nnz 3
+2022-04-27 14:53:05,682 INFO - __main__ - [iter 2000] reward_batch: -2.7190330028533936, max_reward: -2.493957671259027, max_reward_batch: -2.7190329414457794
+2022-04-27 14:53:19,701 INFO - __main__ - [iter 2500] reward_batch: -2.7190330028533936, max_reward: -2.493957671259027, max_reward_batch: -2.7190329414457794
+2022-04-27 14:53:33,284 INFO - __main__ - [iter 3000] lambda1 2.424312570595954, upper 2.424312570595954, lambda2 0.01, upper 0.01, score_min 2.424312570595954, cyc_min 0.0
+2022-04-27 14:53:33,286 INFO - __main__ - before pruning: fdr 0.6, tpr 0.5714285714285714, fpr 2.0, shd 6, nnz 10
+2022-04-27 14:53:33,287 INFO - __main__ - after  pruning: fdr 0.0, tpr 0.14285714285714285, fpr 0.0, shd 6, nnz 1
+2022-04-27 14:53:33,315 INFO - __main__ - [iter 3000] reward_batch: -3.143345594406128, max_reward: -2.918270241854981, max_reward_batch: -3.1433455120417335
+2022-04-27 14:53:46,827 INFO - __main__ - [iter 3500] reward_batch: -3.143345594406128, max_reward: -2.918270241854981, max_reward_batch: -3.1433455120417335
+2022-04-27 14:54:00,678 INFO - __main__ - [iter 4000] lambda1 2.424312570595954, upper 2.424312570595954, lambda2 0.01, upper 0.01, score_min 2.424312570595954, cyc_min 0.0
+2022-04-27 14:54:00,680 INFO - __main__ - before pruning: fdr 0.6, tpr 0.5714285714285714, fpr 2.0, shd 6, nnz 10
+2022-04-27 14:54:00,680 INFO - __main__ - after  pruning: fdr 0.0, tpr 0.14285714285714285, fpr 0.0, shd 6, nnz 1
+2022-04-27 14:54:00,710 INFO - __main__ - [iter 4000] reward_batch: -3.143345594406128, max_reward: -2.918270241854981, max_reward_batch: -3.1433455120417335
+2022-04-27 14:54:01,343 WARNING - tensorflow - Issue encountered when serializing variables.
+Type is unsupported, or the types of the items don't match field type in CollectionDef. Note this is a warning and probably safe to ignore.
+tf.float32 has type DType, but expected one of: int, long, bool
+2022-04-27 14:54:01,344 WARNING - tensorflow - Issue encountered when serializing trainable_variables.
+Type is unsupported, or the types of the items don't match field type in CollectionDef. Note this is a warning and probably safe to ignore.
+tf.float32 has type DType, but expected one of: int, long, bool
+2022-04-27 14:54:01,498 INFO - __main__ - Model saved in file: output/synthetic_n5_e12/model/tmp.ckpt-4000
+2022-04-27 14:54:15,434 INFO - __main__ - [iter 4500] reward_batch: -3.143345594406128, max_reward: -2.918270241854981, max_reward_batch: -3.1433455120417335
+2022-04-27 14:54:29,194 INFO - __main__ - [iter 5000] lambda1 2.424312570595954, upper 2.424312570595954, lambda2 0.01, upper 0.01, score_min 2.424312570595954, cyc_min 0.0
+2022-04-27 14:54:29,197 INFO - __main__ - before pruning: fdr 0.6, tpr 0.5714285714285714, fpr 2.0, shd 6, nnz 10
+2022-04-27 14:54:29,197 INFO - __main__ - after  pruning: fdr 0.0, tpr 0.14285714285714285, fpr 0.0, shd 6, nnz 1
+2022-04-27 14:54:29,227 INFO - __main__ - [iter 5000] reward_batch: -3.143345594406128, max_reward: -2.918270241854981, max_reward_batch: -3.1433455120417335
+2022-04-27 14:54:42,699 INFO - __main__ - [iter 5500] reward_batch: -3.143345594406128, max_reward: -2.918270241854981, max_reward_batch: -3.1433455120417335
+2022-04-27 14:54:56,247 INFO - __main__ - [iter 6000] lambda1 2.424312570595954, upper 2.424312570595954, lambda2 0.01, upper 0.01, score_min 2.424312570595954, cyc_min 0.0
+2022-04-27 14:54:56,249 INFO - __main__ - before pruning: fdr 0.6, tpr 0.5714285714285714, fpr 2.0, shd 6, nnz 10
+2022-04-27 14:54:56,250 INFO - __main__ - after  pruning: fdr 0.0, tpr 0.14285714285714285, fpr 0.0, shd 6, nnz 1
+2022-04-27 14:54:56,280 INFO - __main__ - [iter 6000] reward_batch: -3.143345594406128, max_reward: -2.918270241854981, max_reward_batch: -3.1433455120417335
+2022-04-27 14:55:09,717 INFO - __main__ - [iter 6500] reward_batch: -3.143345594406128, max_reward: -2.918270241854981, max_reward_batch: -3.1433455120417335
+2022-04-27 14:55:23,392 INFO - __main__ - [iter 7000] lambda1 2.424312570595954, upper 2.424312570595954, lambda2 0.01, upper 0.01, score_min 2.424312570595954, cyc_min 0.0
+2022-04-27 14:55:23,394 INFO - __main__ - before pruning: fdr 0.6, tpr 0.5714285714285714, fpr 2.0, shd 6, nnz 10
+2022-04-27 14:55:23,394 INFO - __main__ - after  pruning: fdr 0.0, tpr 0.14285714285714285, fpr 0.0, shd 6, nnz 1
+2022-04-27 14:55:23,423 INFO - __main__ - [iter 7000] reward_batch: -3.143345594406128, max_reward: -2.918270241854981, max_reward_batch: -3.1433455120417335
+2022-04-27 14:55:37,004 INFO - __main__ - [iter 7500] reward_batch: -3.143345594406128, max_reward: -2.918270241854981, max_reward_batch: -3.1433455120417335
+2022-04-27 14:55:50,643 INFO - __main__ - [iter 8000] lambda1 2.424312570595954, upper 2.424312570595954, lambda2 0.01, upper 0.01, score_min 2.424312570595954, cyc_min 0.0
+2022-04-27 14:55:50,646 INFO - __main__ - before pruning: fdr 0.6, tpr 0.5714285714285714, fpr 2.0, shd 6, nnz 10
+2022-04-27 14:55:50,646 INFO - __main__ - after  pruning: fdr 0.0, tpr 0.14285714285714285, fpr 0.0, shd 6, nnz 1
+2022-04-27 14:55:50,675 INFO - __main__ - [iter 8000] reward_batch: -3.143345594406128, max_reward: -2.918270241854981, max_reward_batch: -3.1433455120417335
+2022-04-27 14:55:51,110 WARNING - tensorflow - Issue encountered when serializing variables.
+Type is unsupported, or the types of the items don't match field type in CollectionDef. Note this is a warning and probably safe to ignore.
+tf.float32 has type DType, but expected one of: int, long, bool
+2022-04-27 14:55:51,111 WARNING - tensorflow - Issue encountered when serializing trainable_variables.
+Type is unsupported, or the types of the items don't match field type in CollectionDef. Note this is a warning and probably safe to ignore.
+tf.float32 has type DType, but expected one of: int, long, bool
+2022-04-27 14:55:51,258 INFO - __main__ - Model saved in file: output/synthetic_n5_e12/model/tmp.ckpt-8000
+2022-04-27 14:56:04,521 INFO - __main__ - [iter 8500] reward_batch: -3.143345594406128, max_reward: -2.918270241854981, max_reward_batch: -3.1433455120417335
+2022-04-27 14:56:18,030 INFO - __main__ - [iter 9000] lambda1 2.424312570595954, upper 2.424312570595954, lambda2 0.01, upper 0.01, score_min 2.424312570595954, cyc_min 0.0
+2022-04-27 14:56:18,032 INFO - __main__ - before pruning: fdr 0.6, tpr 0.5714285714285714, fpr 2.0, shd 6, nnz 10
+2022-04-27 14:56:18,032 INFO - __main__ - after  pruning: fdr 0.0, tpr 0.14285714285714285, fpr 0.0, shd 6, nnz 1
+2022-04-27 14:56:18,062 INFO - __main__ - [iter 9000] reward_batch: -3.143345594406128, max_reward: -2.918270241854981, max_reward_batch: -3.1433455120417335
+2022-04-27 14:56:31,442 INFO - __main__ - [iter 9500] reward_batch: -3.143345594406128, max_reward: -2.918270241854981, max_reward_batch: -3.1433455120417335
+2022-04-27 14:56:44,986 INFO - __main__ - [iter 10000] lambda1 2.424312570595954, upper 2.424312570595954, lambda2 0.01, upper 0.01, score_min 2.424312570595954, cyc_min 0.0
+2022-04-27 14:56:44,989 INFO - __main__ - before pruning: fdr 0.6, tpr 0.5714285714285714, fpr 2.0, shd 6, nnz 10
+2022-04-27 14:56:44,989 INFO - __main__ - after  pruning: fdr 0.0, tpr 0.14285714285714285, fpr 0.0, shd 6, nnz 1
+2022-04-27 14:56:45,019 INFO - __main__ - [iter 10000] reward_batch: -3.143345594406128, max_reward: -2.918270241854981, max_reward_batch: -3.1433455120417335
+2022-04-27 14:56:58,419 INFO - __main__ - [iter 10500] reward_batch: -3.143345594406128, max_reward: -2.918270241854981, max_reward_batch: -3.1433455120417335
+2022-04-27 14:57:12,003 INFO - __main__ - [iter 11000] lambda1 2.424312570595954, upper 2.424312570595954, lambda2 0.01, upper 0.01, score_min 2.424312570595954, cyc_min 0.0
+2022-04-27 14:57:12,006 INFO - __main__ - before pruning: fdr 0.6, tpr 0.5714285714285714, fpr 2.0, shd 6, nnz 10
+2022-04-27 14:57:12,006 INFO - __main__ - after  pruning: fdr 0.0, tpr 0.14285714285714285, fpr 0.0, shd 6, nnz 1
+2022-04-27 14:57:12,036 INFO - __main__ - [iter 11000] reward_batch: -3.143345594406128, max_reward: -2.918270241854981, max_reward_batch: -3.1433455120417335
+2022-04-27 14:57:25,557 INFO - __main__ - [iter 11500] reward_batch: -3.143345594406128, max_reward: -2.918270241854981, max_reward_batch: -3.1433455120417335
+2022-04-27 14:57:39,136 INFO - __main__ - [iter 12000] lambda1 2.424312570595954, upper 2.424312570595954, lambda2 0.01, upper 0.01, score_min 2.424312570595954, cyc_min 0.0
+2022-04-27 14:57:39,138 INFO - __main__ - before pruning: fdr 0.6, tpr 0.5714285714285714, fpr 2.0, shd 6, nnz 10
+2022-04-27 14:57:39,139 INFO - __main__ - after  pruning: fdr 0.0, tpr 0.14285714285714285, fpr 0.0, shd 6, nnz 1
+2022-04-27 14:57:39,168 INFO - __main__ - [iter 12000] reward_batch: -3.143345594406128, max_reward: -2.918270241854981, max_reward_batch: -3.1433455120417335
+2022-04-27 14:57:39,612 WARNING - tensorflow - Issue encountered when serializing variables.
+Type is unsupported, or the types of the items don't match field type in CollectionDef. Note this is a warning and probably safe to ignore.
+tf.float32 has type DType, but expected one of: int, long, bool
+2022-04-27 14:57:39,613 WARNING - tensorflow - Issue encountered when serializing trainable_variables.
+Type is unsupported, or the types of the items don't match field type in CollectionDef. Note this is a warning and probably safe to ignore.
+tf.float32 has type DType, but expected one of: int, long, bool
+2022-04-27 14:57:39,764 INFO - __main__ - Model saved in file: output/synthetic_n5_e12/model/tmp.ckpt-12000
+2022-04-27 14:57:53,017 INFO - __main__ - [iter 12500] reward_batch: -3.143345594406128, max_reward: -2.918270241854981, max_reward_batch: -3.1433455120417335
+2022-04-27 14:58:06,694 INFO - __main__ - [iter 13000] lambda1 2.424312570595954, upper 2.424312570595954, lambda2 0.01, upper 0.01, score_min 2.424312570595954, cyc_min 0.0
+2022-04-27 14:58:06,697 INFO - __main__ - before pruning: fdr 0.6, tpr 0.5714285714285714, fpr 2.0, shd 6, nnz 10
+2022-04-27 14:58:06,697 INFO - __main__ - after  pruning: fdr 0.0, tpr 0.14285714285714285, fpr 0.0, shd 6, nnz 1
+2022-04-27 14:58:06,726 INFO - __main__ - [iter 13000] reward_batch: -3.143345594406128, max_reward: -2.918270241854981, max_reward_batch: -3.1433455120417335
+2022-04-27 14:58:20,197 INFO - __main__ - [iter 13500] reward_batch: -3.143345594406128, max_reward: -2.918270241854981, max_reward_batch: -3.1433455120417335
+2022-04-27 14:58:33,803 INFO - __main__ - [iter 14000] lambda1 2.424312570595954, upper 2.424312570595954, lambda2 0.01, upper 0.01, score_min 2.424312570595954, cyc_min 0.0
+2022-04-27 14:58:33,806 INFO - __main__ - before pruning: fdr 0.6, tpr 0.5714285714285714, fpr 2.0, shd 6, nnz 10
+2022-04-27 14:58:33,806 INFO - __main__ - after  pruning: fdr 0.0, tpr 0.14285714285714285, fpr 0.0, shd 6, nnz 1
+2022-04-27 14:58:33,836 INFO - __main__ - [iter 14000] reward_batch: -3.143345594406128, max_reward: -2.918270241854981, max_reward_batch: -3.1433455120417335
+2022-04-27 14:58:47,295 INFO - __main__ - [iter 14500] reward_batch: -3.143345594406128, max_reward: -2.918270241854981, max_reward_batch: -3.1433455120417335
+2022-04-27 14:59:01,156 INFO - __main__ - [iter 15000] lambda1 2.424312570595954, upper 2.424312570595954, lambda2 0.01, upper 0.01, score_min 2.424312570595954, cyc_min 0.0
+2022-04-27 14:59:01,158 INFO - __main__ - before pruning: fdr 0.6, tpr 0.5714285714285714, fpr 2.0, shd 6, nnz 10
+2022-04-27 14:59:01,158 INFO - __main__ - after  pruning: fdr 0.0, tpr 0.14285714285714285, fpr 0.0, shd 6, nnz 1
+2022-04-27 14:59:01,188 INFO - __main__ - [iter 15000] reward_batch: -3.143345594406128, max_reward: -2.918270241854981, max_reward_batch: -3.1433455120417335
+2022-04-27 14:59:14,665 INFO - __main__ - [iter 15500] reward_batch: -3.143345594406128, max_reward: -2.918270241854981, max_reward_batch: -3.1433455120417335
+2022-04-27 14:59:28,335 INFO - __main__ - [iter 16000] lambda1 2.424312570595954, upper 2.424312570595954, lambda2 0.01, upper 0.01, score_min 2.424312570595954, cyc_min 0.0
+2022-04-27 14:59:28,338 INFO - __main__ - before pruning: fdr 0.6, tpr 0.5714285714285714, fpr 2.0, shd 6, nnz 10
+2022-04-27 14:59:28,338 INFO - __main__ - after  pruning: fdr 0.0, tpr 0.14285714285714285, fpr 0.0, shd 6, nnz 1
+2022-04-27 14:59:28,370 INFO - __main__ - [iter 16000] reward_batch: -3.143345594406128, max_reward: -2.918270241854981, max_reward_batch: -3.1433455120417335
+2022-04-27 14:59:28,831 WARNING - tensorflow - Issue encountered when serializing variables.
+Type is unsupported, or the types of the items don't match field type in CollectionDef. Note this is a warning and probably safe to ignore.
+tf.float32 has type DType, but expected one of: int, long, bool
+2022-04-27 14:59:28,832 WARNING - tensorflow - Issue encountered when serializing trainable_variables.
+Type is unsupported, or the types of the items don't match field type in CollectionDef. Note this is a warning and probably safe to ignore.
+tf.float32 has type DType, but expected one of: int, long, bool
+2022-04-27 14:59:28,977 INFO - __main__ - Model saved in file: output/synthetic_n5_e12/model/tmp.ckpt-16000
+2022-04-27 14:59:42,206 INFO - __main__ - [iter 16500] reward_batch: -3.143345594406128, max_reward: -2.918270241854981, max_reward_batch: -3.1433455120417335
+2022-04-27 14:59:55,896 INFO - __main__ - [iter 17000] lambda1 2.424312570595954, upper 2.424312570595954, lambda2 0.01, upper 0.01, score_min 2.424312570595954, cyc_min 0.0
+2022-04-27 14:59:55,898 INFO - __main__ - before pruning: fdr 0.6, tpr 0.5714285714285714, fpr 2.0, shd 6, nnz 10
+2022-04-27 14:59:55,898 INFO - __main__ - after  pruning: fdr 0.0, tpr 0.14285714285714285, fpr 0.0, shd 6, nnz 1
+2022-04-27 14:59:55,928 INFO - __main__ - [iter 17000] reward_batch: -3.143345594406128, max_reward: -2.918270241854981, max_reward_batch: -3.1433455120417335
+2022-04-27 15:00:09,437 INFO - __main__ - [iter 17500] reward_batch: -3.143345594406128, max_reward: -2.918270241854981, max_reward_batch: -3.1433455120417335
+2022-04-27 15:00:23,088 INFO - __main__ - [iter 18000] lambda1 2.424312570595954, upper 2.424312570595954, lambda2 0.01, upper 0.01, score_min 2.424312570595954, cyc_min 0.0
+2022-04-27 15:00:23,091 INFO - __main__ - before pruning: fdr 0.6, tpr 0.5714285714285714, fpr 2.0, shd 6, nnz 10
+2022-04-27 15:00:23,091 INFO - __main__ - after  pruning: fdr 0.0, tpr 0.14285714285714285, fpr 0.0, shd 6, nnz 1
+2022-04-27 15:00:23,121 INFO - __main__ - [iter 18000] reward_batch: -3.143345594406128, max_reward: -2.918270241854981, max_reward_batch: -3.1433455120417335
+2022-04-27 15:00:36,570 INFO - __main__ - [iter 18500] reward_batch: -3.143345594406128, max_reward: -2.918270241854981, max_reward_batch: -3.1433455120417335
+2022-04-27 15:00:50,236 INFO - __main__ - [iter 19000] lambda1 2.424312570595954, upper 2.424312570595954, lambda2 0.01, upper 0.01, score_min 2.424312570595954, cyc_min 0.0
+2022-04-27 15:00:50,239 INFO - __main__ - before pruning: fdr 0.6, tpr 0.5714285714285714, fpr 2.0, shd 6, nnz 10
+2022-04-27 15:00:50,239 INFO - __main__ - after  pruning: fdr 0.0, tpr 0.14285714285714285, fpr 0.0, shd 6, nnz 1
+2022-04-27 15:00:50,269 INFO - __main__ - [iter 19000] reward_batch: -3.143345594406128, max_reward: -2.918270241854981, max_reward_batch: -3.1433455120417335
+2022-04-27 15:01:03,719 INFO - __main__ - [iter 19500] reward_batch: -3.143345594406128, max_reward: -2.918270241854981, max_reward_batch: -3.1433455120417335
+2022-04-27 15:01:17,384 INFO - __main__ - [iter 20000] lambda1 2.424312570595954, upper 2.424312570595954, lambda2 0.01, upper 0.01, score_min 2.424312570595954, cyc_min 0.0
+2022-04-27 15:01:17,386 INFO - __main__ - before pruning: fdr 0.6, tpr 0.5714285714285714, fpr 2.0, shd 6, nnz 10
+2022-04-27 15:01:17,386 INFO - __main__ - after  pruning: fdr 0.0, tpr 0.14285714285714285, fpr 0.0, shd 6, nnz 1
+2022-04-27 15:01:17,416 INFO - __main__ - [iter 20000] reward_batch: -3.143345594406128, max_reward: -2.918270241854981, max_reward_batch: -3.1433455120417335
+2022-04-27 15:01:17,908 WARNING - tensorflow - Issue encountered when serializing variables.
+Type is unsupported, or the types of the items don't match field type in CollectionDef. Note this is a warning and probably safe to ignore.
+tf.float32 has type DType, but expected one of: int, long, bool
+2022-04-27 15:01:17,909 WARNING - tensorflow - Issue encountered when serializing trainable_variables.
+Type is unsupported, or the types of the items don't match field type in CollectionDef. Note this is a warning and probably safe to ignore.
+tf.float32 has type DType, but expected one of: int, long, bool
+2022-04-27 15:01:18,067 INFO - __main__ - Model saved in file: output/synthetic_n5_e12/model/tmp.ckpt-20000
+2022-04-27 15:01:18,067 INFO - __main__ - Training COMPLETED !
+2022-04-27 15:01:18,317 WARNING - tensorflow - Issue encountered when serializing variables.
+Type is unsupported, or the types of the items don't match field type in CollectionDef. Note this is a warning and probably safe to ignore.
+tf.float32 has type DType, but expected one of: int, long, bool
+2022-04-27 15:01:18,317 WARNING - tensorflow - Issue encountered when serializing trainable_variables.
+Type is unsupported, or the types of the items don't match field type in CollectionDef. Note this is a warning and probably safe to ignore.
+tf.float32 has type DType, but expected one of: int, long, bool
+2022-04-27 15:14:51,824 INFO - helpers.log_helper - Completed configuring logger.
+2022-04-27 15:14:51,831 INFO - __main__ - Python version is 3.6.13
+2022-04-27 15:14:51,831 INFO - __main__ - Current commit of code: ___
+2022-04-27 15:14:51,831 WARNING - tensorflow - From /home/lixuanyi/code/bnsl_rl/experiments/Causal_Discovery_RL/src/helpers/tf_utils.py:18: The name tf.set_random_seed is deprecated. Please use tf.compat.v1.set_random_seed instead.
+
+2022-04-27 15:14:51,832 INFO - __main__ - Configuration parameters: {'encoder_type': 'TransformerEncoder', 'hidden_dim': 64, 'num_heads': 16, 'num_stacks': 6, 'residual': False, 'decoder_type': 'SingleLayerDecoder', 'decoder_activation': 'tanh', 'decoder_hidden_dim': 16, 'use_bias': False, 'use_bias_constant': False, 'bias_initial_value': False, 'batch_size': 64, 'input_dimension': 64, 'max_length': 5, 'data_size': 4096, 'read_data': True, 'data_path': 'data/synthetic_n5_e12', 'output_path': 'synthetic_n5_e12', 'normalize': False, 'transpose': True, 'score_type': 'BIC', 'reg_type': 'LR', 'lambda_iter_num': 1000, 'lambda_flag_default': True, 'score_bd_tight': True, 'lambda1_update': 1, 'lambda2_update': 10, 'score_lower': 0.0, 'score_upper': 0.0, 'lambda2_lower': -1, 'lambda2_upper': -1, 'seed': 8, 'nb_epoch': 20000, 'lr1_start': 0.001, 'lr1_decay_step': 5000, 'lr1_decay_rate': 0.96, 'alpha': 0.99, 'init_baseline': -1.0, 'temperature': 3.0, 'C': 10.0, 'l1_graph_reg': 0.0, 'inference_mode': True, 'restore_model': False, 'save_to': '20/model', 'restore_from': '20/model', 'log_dir': 'summary/20/repo', 'verbose': False, 'save_model_path': 'output/synthetic_n5_e12/model', 'summary_dir': 'output/synthetic_n5_e12/summary', 'plot_dir': 'output/synthetic_n5_e12/plot', 'graph_dir': 'output/synthetic_n5_e12/graph'}
+2022-04-27 15:14:51,853 INFO - __main__ - Original sl: 0.010051310226159004, su: 0.2049962129280064, strue: 0.1108726091994867
+2022-04-27 15:14:51,854 INFO - __main__ - Transfomed sl: 0.010051310226159004, su: 0.2049962129280064, lambda2: 0.01, true: 2.5858921566040074
+2022-04-27 15:14:51,861 WARNING - tensorflow - From /home/lixuanyi/code/bnsl_rl/experiments/Causal_Discovery_RL/src/models/actor_graph.py:52: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+2022-04-27 15:14:51,863 WARNING - tensorflow - From /home/lixuanyi/code/bnsl_rl/experiments/Causal_Discovery_RL/src/models/actor_graph.py:65: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+2022-04-27 15:14:51,864 WARNING - tensorflow - 
+The TensorFlow contrib module will not be included in TensorFlow 2.0.
+For more information, please see:
+  * https://github.com/tensorflow/community/blob/master/rfcs/20180907-contrib-sunset.md
+  * https://github.com/tensorflow/addons
+  * https://github.com/tensorflow/io (for I/O related ops)
+If you depend on functionality not listed there, please file an issue.
+
+2022-04-27 15:14:51,867 WARNING - tensorflow - From /home/lixuanyi/code/bnsl_rl/experiments/Causal_Discovery_RL/src/models/encoder/transformer_encoder.py:97: The name tf.get_variable is deprecated. Please use tf.compat.v1.get_variable instead.
+
+2022-04-27 15:14:52,448 WARNING - tensorflow - From /home/lixuanyi/code/bnsl_rl/experiments/Causal_Discovery_RL/src/models/actor_graph.py:14: The name tf.summary.scalar is deprecated. Please use tf.compat.v1.summary.scalar instead.
+
+2022-04-27 15:14:52,471 WARNING - tensorflow - From /home/lixuanyi/code/bnsl_rl/experiments/Causal_Discovery_RL/src/models/actor_graph.py:124: The name tf.get_collection is deprecated. Please use tf.compat.v1.get_collection instead.
+
+2022-04-27 15:14:52,471 WARNING - tensorflow - From /home/lixuanyi/code/bnsl_rl/experiments/Causal_Discovery_RL/src/models/actor_graph.py:124: The name tf.GraphKeys is deprecated. Please use tf.compat.v1.GraphKeys instead.
+
+2022-04-27 15:14:52,475 WARNING - tensorflow - From /home/lixuanyi/code/bnsl_rl/experiments/Causal_Discovery_RL/src/models/actor_graph.py:131: The name tf.assign is deprecated. Please use tf.compat.v1.assign instead.
+
+2022-04-27 15:14:52,477 INFO - tensorflow - Summary name average baseline is illegal; using average_baseline instead.
+2022-04-27 15:14:52,478 WARNING - tensorflow - From /home/lixuanyi/code/bnsl_rl/experiments/Causal_Discovery_RL/src/models/actor_graph.py:137: The name tf.train.exponential_decay is deprecated. Please use tf.compat.v1.train.exponential_decay instead.
+
+2022-04-27 15:14:52,480 WARNING - tensorflow - From /home/lixuanyi/code/bnsl_rl/experiments/Causal_Discovery_RL/src/models/actor_graph.py:140: The name tf.train.AdamOptimizer is deprecated. Please use tf.compat.v1.train.AdamOptimizer instead.
+
+2022-04-27 15:14:54,224 WARNING - tensorflow - From /home/lixuanyi/code/bnsl_rl/experiments/Causal_Discovery_RL/src/models/actor_graph.py:161: The name tf.losses.mean_squared_error is deprecated. Please use tf.compat.v1.losses.mean_squared_error instead.
+
+2022-04-27 15:14:55,581 WARNING - tensorflow - From /home/lixuanyi/code/bnsl_rl/experiments/Causal_Discovery_RL/src/models/actor_graph.py:62: The name tf.summary.merge_all is deprecated. Please use tf.compat.v1.summary.merge_all instead.
+
+2022-04-27 15:14:55,582 INFO - __main__ - Finished creating training dataset, actor model and reward class
+2022-04-27 15:14:55,582 WARNING - tensorflow - From main.py:125: The name tf.global_variables is deprecated. Please use tf.compat.v1.global_variables instead.
+
+2022-04-27 15:14:55,582 WARNING - tensorflow - From main.py:126: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+2022-04-27 15:14:55,630 INFO - __main__ - Starting session...
+2022-04-27 15:14:55,630 WARNING - tensorflow - From main.py:129: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+2022-04-27 15:14:55,630 WARNING - tensorflow - From main.py:131: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+2022-04-27 15:14:56,110 WARNING - tensorflow - From main.py:133: The name tf.global_variables_initializer is deprecated. Please use tf.compat.v1.global_variables_initializer instead.
+
+2022-04-27 15:14:57,160 INFO - __main__ - Shape of actor.input: [64  5 64]
+2022-04-27 15:14:57,160 WARNING - tensorflow - From main.py:160: The name tf.summary.FileWriter is deprecated. Please use tf.compat.v1.summary.FileWriter instead.
+
+2022-04-27 15:14:57,821 WARNING - tensorflow - Issue encountered when serializing variables.
+Type is unsupported, or the types of the items don't match field type in CollectionDef. Note this is a warning and probably safe to ignore.
+tf.float32 has type DType, but expected one of: int, long, bool
+2022-04-27 15:14:57,822 WARNING - tensorflow - Issue encountered when serializing trainable_variables.
+Type is unsupported, or the types of the items don't match field type in CollectionDef. Note this is a warning and probably safe to ignore.
+tf.float32 has type DType, but expected one of: int, long, bool
+2022-04-27 15:14:57,993 INFO - __main__ - Starting training.
+2022-04-27 15:15:02,352 INFO - __main__ - [iter 1] reward_batch: -2.2443313598632812, max_reward: -0.8151194701870279, max_reward_batch: -0.8151194701870279
+2022-04-27 15:15:19,933 INFO - __main__ - [iter 500] reward_batch: -0.7796555757522583, max_reward: -0.5014233385416689, max_reward_batch: -0.6330696353467975
+2022-04-27 15:15:33,628 INFO - __main__ - [iter 1000] lambda1 1, upper 5, lambda2 0.01, upper 0.01, score_min 0.21687561855704432, cyc_min 28.454771998462455
+2022-04-27 15:15:33,632 INFO - __main__ - before pruning: fdr 0.5882352941176471, tpr 1.0, fpr 3.3333333333333335, shd 9, nnz 17
+2022-04-27 15:15:33,632 INFO - __main__ - after  pruning: fdr 0.3333333333333333, tpr 0.2857142857142857, fpr 0.3333333333333333, shd 6, nnz 3
+2022-04-27 15:15:33,661 INFO - __main__ - [iter 1000] reward_batch: -1.7295323610305786, max_reward: -1.5014233385416689, max_reward_batch: -1.7190329414457797
+2022-04-27 15:15:47,071 INFO - __main__ - [iter 1500] reward_batch: -1.719032883644104, max_reward: -1.5014233385416689, max_reward_batch: -1.7190329414457797
+2022-04-27 15:16:00,570 INFO - __main__ - [iter 2000] lambda1 2, upper 5, lambda2 0.01, upper 0.01, score_min 0.21687561855704432, cyc_min 28.454771998462455
+2022-04-27 15:16:00,573 INFO - __main__ - before pruning: fdr 0.5882352941176471, tpr 1.0, fpr 3.3333333333333335, shd 9, nnz 17
+2022-04-27 15:16:00,573 INFO - __main__ - after  pruning: fdr 0.3333333333333333, tpr 0.2857142857142857, fpr 0.3333333333333333, shd 6, nnz 3
+2022-04-27 15:16:00,603 INFO - __main__ - [iter 2000] reward_batch: -2.7190330028533936, max_reward: -2.501423338541669, max_reward_batch: -2.7190329414457794
+2022-04-27 15:16:13,987 INFO - __main__ - [iter 2500] reward_batch: -2.7190330028533936, max_reward: -2.501423338541669, max_reward_batch: -2.7190329414457794
+2022-04-27 15:16:27,556 INFO - __main__ - [iter 3000] lambda1 2.424312570595954, upper 2.424312570595954, lambda2 0.01, upper 0.01, score_min 2.424312570595954, cyc_min 0.0
+2022-04-27 15:16:27,559 INFO - __main__ - before pruning: fdr 0.6, tpr 0.5714285714285714, fpr 2.0, shd 6, nnz 10
+2022-04-27 15:16:27,559 INFO - __main__ - after  pruning: fdr 0.0, tpr 0.14285714285714285, fpr 0.0, shd 6, nnz 1
+2022-04-27 15:16:27,588 INFO - __main__ - [iter 3000] reward_batch: -3.143345594406128, max_reward: -2.925735909137623, max_reward_batch: -3.1433455120417335
+2022-04-27 15:16:41,046 INFO - __main__ - [iter 3500] reward_batch: -3.143345594406128, max_reward: -2.925735909137623, max_reward_batch: -3.1433455120417335
+2022-04-27 15:16:54,631 INFO - __main__ - [iter 4000] lambda1 2.424312570595954, upper 2.424312570595954, lambda2 0.01, upper 0.01, score_min 2.424312570595954, cyc_min 0.0
+2022-04-27 15:16:54,634 INFO - __main__ - before pruning: fdr 0.6, tpr 0.5714285714285714, fpr 2.0, shd 6, nnz 10
+2022-04-27 15:16:54,634 INFO - __main__ - after  pruning: fdr 0.0, tpr 0.14285714285714285, fpr 0.0, shd 6, nnz 1
+2022-04-27 15:16:54,664 INFO - __main__ - [iter 4000] reward_batch: -3.143345594406128, max_reward: -2.925735909137623, max_reward_batch: -3.1433455120417335
+2022-04-27 15:16:55,286 WARNING - tensorflow - Issue encountered when serializing variables.
+Type is unsupported, or the types of the items don't match field type in CollectionDef. Note this is a warning and probably safe to ignore.
+tf.float32 has type DType, but expected one of: int, long, bool
+2022-04-27 15:16:55,287 WARNING - tensorflow - Issue encountered when serializing trainable_variables.
+Type is unsupported, or the types of the items don't match field type in CollectionDef. Note this is a warning and probably safe to ignore.
+tf.float32 has type DType, but expected one of: int, long, bool
+2022-04-27 15:16:55,442 INFO - __main__ - Model saved in file: output/synthetic_n5_e12/model/tmp.ckpt-4000
+2022-04-27 15:17:08,813 INFO - __main__ - [iter 4500] reward_batch: -3.143345594406128, max_reward: -2.925735909137623, max_reward_batch: -3.1433455120417335
+2022-04-27 15:17:22,381 INFO - __main__ - [iter 5000] lambda1 2.424312570595954, upper 2.424312570595954, lambda2 0.01, upper 0.01, score_min 2.424312570595954, cyc_min 0.0
+2022-04-27 15:17:22,383 INFO - __main__ - before pruning: fdr 0.6, tpr 0.5714285714285714, fpr 2.0, shd 6, nnz 10
+2022-04-27 15:17:22,383 INFO - __main__ - after  pruning: fdr 0.0, tpr 0.14285714285714285, fpr 0.0, shd 6, nnz 1
+2022-04-27 15:17:22,412 INFO - __main__ - [iter 5000] reward_batch: -3.143345594406128, max_reward: -2.925735909137623, max_reward_batch: -3.1433455120417335
+2022-04-27 15:17:35,892 INFO - __main__ - [iter 5500] reward_batch: -3.143345594406128, max_reward: -2.925735909137623, max_reward_batch: -3.1433455120417335
+2022-04-27 15:17:49,436 INFO - __main__ - [iter 6000] lambda1 2.424312570595954, upper 2.424312570595954, lambda2 0.01, upper 0.01, score_min 2.424312570595954, cyc_min 0.0
+2022-04-27 15:17:49,439 INFO - __main__ - before pruning: fdr 0.6, tpr 0.5714285714285714, fpr 2.0, shd 6, nnz 10
+2022-04-27 15:17:49,439 INFO - __main__ - after  pruning: fdr 0.0, tpr 0.14285714285714285, fpr 0.0, shd 6, nnz 1
+2022-04-27 15:17:49,468 INFO - __main__ - [iter 6000] reward_batch: -3.143345594406128, max_reward: -2.925735909137623, max_reward_batch: -3.1433455120417335
+2022-04-27 15:18:02,946 INFO - __main__ - [iter 6500] reward_batch: -3.143345594406128, max_reward: -2.925735909137623, max_reward_batch: -3.1433455120417335
+2022-04-27 15:18:16,571 INFO - __main__ - [iter 7000] lambda1 2.424312570595954, upper 2.424312570595954, lambda2 0.01, upper 0.01, score_min 2.424312570595954, cyc_min 0.0
+2022-04-27 15:18:16,574 INFO - __main__ - before pruning: fdr 0.6, tpr 0.5714285714285714, fpr 2.0, shd 6, nnz 10
+2022-04-27 15:18:16,574 INFO - __main__ - after  pruning: fdr 0.0, tpr 0.14285714285714285, fpr 0.0, shd 6, nnz 1
+2022-04-27 15:18:16,603 INFO - __main__ - [iter 7000] reward_batch: -3.143345594406128, max_reward: -2.925735909137623, max_reward_batch: -3.1433455120417335
+2022-04-27 15:18:30,075 INFO - __main__ - [iter 7500] reward_batch: -3.143345594406128, max_reward: -2.925735909137623, max_reward_batch: -3.1433455120417335
+2022-04-27 15:18:43,722 INFO - __main__ - [iter 8000] lambda1 2.424312570595954, upper 2.424312570595954, lambda2 0.01, upper 0.01, score_min 2.424312570595954, cyc_min 0.0
+2022-04-27 15:18:43,725 INFO - __main__ - before pruning: fdr 0.6, tpr 0.5714285714285714, fpr 2.0, shd 6, nnz 10
+2022-04-27 15:18:43,725 INFO - __main__ - after  pruning: fdr 0.0, tpr 0.14285714285714285, fpr 0.0, shd 6, nnz 1
+2022-04-27 15:18:43,754 INFO - __main__ - [iter 8000] reward_batch: -3.143345594406128, max_reward: -2.925735909137623, max_reward_batch: -3.1433455120417335
+2022-04-27 15:18:44,192 WARNING - tensorflow - Issue encountered when serializing variables.
+Type is unsupported, or the types of the items don't match field type in CollectionDef. Note this is a warning and probably safe to ignore.
+tf.float32 has type DType, but expected one of: int, long, bool
+2022-04-27 15:18:44,193 WARNING - tensorflow - Issue encountered when serializing trainable_variables.
+Type is unsupported, or the types of the items don't match field type in CollectionDef. Note this is a warning and probably safe to ignore.
+tf.float32 has type DType, but expected one of: int, long, bool
+2022-04-27 15:18:44,341 INFO - __main__ - Model saved in file: output/synthetic_n5_e12/model/tmp.ckpt-8000
+2022-04-27 15:18:57,679 INFO - __main__ - [iter 8500] reward_batch: -3.143345594406128, max_reward: -2.925735909137623, max_reward_batch: -3.1433455120417335
+2022-04-27 15:19:11,314 INFO - __main__ - [iter 9000] lambda1 2.424312570595954, upper 2.424312570595954, lambda2 0.01, upper 0.01, score_min 2.424312570595954, cyc_min 0.0
+2022-04-27 15:19:11,317 INFO - __main__ - before pruning: fdr 0.6, tpr 0.5714285714285714, fpr 2.0, shd 6, nnz 10
+2022-04-27 15:19:11,317 INFO - __main__ - after  pruning: fdr 0.0, tpr 0.14285714285714285, fpr 0.0, shd 6, nnz 1
+2022-04-27 15:19:11,347 INFO - __main__ - [iter 9000] reward_batch: -3.143345594406128, max_reward: -2.925735909137623, max_reward_batch: -3.1433455120417335
+2022-04-27 15:19:24,895 INFO - __main__ - [iter 9500] reward_batch: -3.143345594406128, max_reward: -2.925735909137623, max_reward_batch: -3.1433455120417335
+2022-04-27 15:19:38,558 INFO - __main__ - [iter 10000] lambda1 2.424312570595954, upper 2.424312570595954, lambda2 0.01, upper 0.01, score_min 2.424312570595954, cyc_min 0.0
+2022-04-27 15:19:38,561 INFO - __main__ - before pruning: fdr 0.6, tpr 0.5714285714285714, fpr 2.0, shd 6, nnz 10
+2022-04-27 15:19:38,561 INFO - __main__ - after  pruning: fdr 0.0, tpr 0.14285714285714285, fpr 0.0, shd 6, nnz 1
+2022-04-27 15:19:38,592 INFO - __main__ - [iter 10000] reward_batch: -3.143345594406128, max_reward: -2.925735909137623, max_reward_batch: -3.1433455120417335
+2022-04-27 15:19:52,170 INFO - __main__ - [iter 10500] reward_batch: -3.143345594406128, max_reward: -2.925735909137623, max_reward_batch: -3.1433455120417335
+2022-04-27 15:20:05,883 INFO - __main__ - [iter 11000] lambda1 2.424312570595954, upper 2.424312570595954, lambda2 0.01, upper 0.01, score_min 2.424312570595954, cyc_min 0.0
+2022-04-27 15:20:05,886 INFO - __main__ - before pruning: fdr 0.6, tpr 0.5714285714285714, fpr 2.0, shd 6, nnz 10
+2022-04-27 15:20:05,886 INFO - __main__ - after  pruning: fdr 0.0, tpr 0.14285714285714285, fpr 0.0, shd 6, nnz 1
+2022-04-27 15:20:05,916 INFO - __main__ - [iter 11000] reward_batch: -3.143345594406128, max_reward: -2.925735909137623, max_reward_batch: -3.1433455120417335
+2022-04-27 15:20:19,436 INFO - __main__ - [iter 11500] reward_batch: -3.143345594406128, max_reward: -2.925735909137623, max_reward_batch: -3.1433455120417335
+2022-04-27 15:20:33,040 INFO - __main__ - [iter 12000] lambda1 2.424312570595954, upper 2.424312570595954, lambda2 0.01, upper 0.01, score_min 2.424312570595954, cyc_min 0.0
+2022-04-27 15:20:33,043 INFO - __main__ - before pruning: fdr 0.6, tpr 0.5714285714285714, fpr 2.0, shd 6, nnz 10
+2022-04-27 15:20:33,043 INFO - __main__ - after  pruning: fdr 0.0, tpr 0.14285714285714285, fpr 0.0, shd 6, nnz 1
+2022-04-27 15:20:33,074 INFO - __main__ - [iter 12000] reward_batch: -3.143345594406128, max_reward: -2.925735909137623, max_reward_batch: -3.1433455120417335
+2022-04-27 15:20:33,531 WARNING - tensorflow - Issue encountered when serializing variables.
+Type is unsupported, or the types of the items don't match field type in CollectionDef. Note this is a warning and probably safe to ignore.
+tf.float32 has type DType, but expected one of: int, long, bool
+2022-04-27 15:20:33,532 WARNING - tensorflow - Issue encountered when serializing trainable_variables.
+Type is unsupported, or the types of the items don't match field type in CollectionDef. Note this is a warning and probably safe to ignore.
+tf.float32 has type DType, but expected one of: int, long, bool
+2022-04-27 15:20:33,686 INFO - __main__ - Model saved in file: output/synthetic_n5_e12/model/tmp.ckpt-12000
+2022-04-27 15:20:47,015 INFO - __main__ - [iter 12500] reward_batch: -3.143345594406128, max_reward: -2.925735909137623, max_reward_batch: -3.1433455120417335
+2022-04-27 15:21:00,664 INFO - __main__ - [iter 13000] lambda1 2.424312570595954, upper 2.424312570595954, lambda2 0.01, upper 0.01, score_min 2.424312570595954, cyc_min 0.0
+2022-04-27 15:21:00,667 INFO - __main__ - before pruning: fdr 0.6, tpr 0.5714285714285714, fpr 2.0, shd 6, nnz 10
+2022-04-27 15:21:00,667 INFO - __main__ - after  pruning: fdr 0.0, tpr 0.14285714285714285, fpr 0.0, shd 6, nnz 1
+2022-04-27 15:21:00,696 INFO - __main__ - [iter 13000] reward_batch: -3.143345594406128, max_reward: -2.925735909137623, max_reward_batch: -3.1433455120417335
+2022-04-27 15:21:14,251 INFO - __main__ - [iter 13500] reward_batch: -3.143345594406128, max_reward: -2.925735909137623, max_reward_batch: -3.1433455120417335
+2022-04-27 15:21:27,967 INFO - __main__ - [iter 14000] lambda1 2.424312570595954, upper 2.424312570595954, lambda2 0.01, upper 0.01, score_min 2.424312570595954, cyc_min 0.0
+2022-04-27 15:21:27,969 INFO - __main__ - before pruning: fdr 0.6, tpr 0.5714285714285714, fpr 2.0, shd 6, nnz 10
+2022-04-27 15:21:27,969 INFO - __main__ - after  pruning: fdr 0.0, tpr 0.14285714285714285, fpr 0.0, shd 6, nnz 1
+2022-04-27 15:21:28,001 INFO - __main__ - [iter 14000] reward_batch: -3.143345594406128, max_reward: -2.925735909137623, max_reward_batch: -3.1433455120417335
+2022-04-27 15:21:41,565 INFO - __main__ - [iter 14500] reward_batch: -3.143345594406128, max_reward: -2.925735909137623, max_reward_batch: -3.1433455120417335
+2022-04-27 15:21:55,320 INFO - __main__ - [iter 15000] lambda1 2.424312570595954, upper 2.424312570595954, lambda2 0.01, upper 0.01, score_min 2.424312570595954, cyc_min 0.0
+2022-04-27 15:21:55,322 INFO - __main__ - before pruning: fdr 0.6, tpr 0.5714285714285714, fpr 2.0, shd 6, nnz 10
+2022-04-27 15:21:55,322 INFO - __main__ - after  pruning: fdr 0.0, tpr 0.14285714285714285, fpr 0.0, shd 6, nnz 1
+2022-04-27 15:21:55,352 INFO - __main__ - [iter 15000] reward_batch: -3.143345594406128, max_reward: -2.925735909137623, max_reward_batch: -3.1433455120417335
+2022-04-27 15:22:08,864 INFO - __main__ - [iter 15500] reward_batch: -3.143868923187256, max_reward: -2.925735909137623, max_reward_batch: -3.1433455120417335
+2022-04-27 15:22:22,587 INFO - __main__ - [iter 16000] lambda1 2.424312570595954, upper 2.424312570595954, lambda2 0.01, upper 0.01, score_min 2.424312570595954, cyc_min 0.0
+2022-04-27 15:22:22,590 INFO - __main__ - before pruning: fdr 0.6, tpr 0.5714285714285714, fpr 2.0, shd 6, nnz 10
+2022-04-27 15:22:22,590 INFO - __main__ - after  pruning: fdr 0.0, tpr 0.14285714285714285, fpr 0.0, shd 6, nnz 1
+2022-04-27 15:22:22,619 INFO - __main__ - [iter 16000] reward_batch: -3.143345594406128, max_reward: -2.925735909137623, max_reward_batch: -3.1433455120417335
+2022-04-27 15:22:23,089 WARNING - tensorflow - Issue encountered when serializing variables.
+Type is unsupported, or the types of the items don't match field type in CollectionDef. Note this is a warning and probably safe to ignore.
+tf.float32 has type DType, but expected one of: int, long, bool
+2022-04-27 15:22:23,090 WARNING - tensorflow - Issue encountered when serializing trainable_variables.
+Type is unsupported, or the types of the items don't match field type in CollectionDef. Note this is a warning and probably safe to ignore.
+tf.float32 has type DType, but expected one of: int, long, bool
+2022-04-27 15:22:23,249 INFO - __main__ - Model saved in file: output/synthetic_n5_e12/model/tmp.ckpt-16000
+2022-04-27 15:22:36,651 INFO - __main__ - [iter 16500] reward_batch: -3.143345594406128, max_reward: -2.925735909137623, max_reward_batch: -3.1433455120417335
+2022-04-27 15:22:50,369 INFO - __main__ - [iter 17000] lambda1 2.424312570595954, upper 2.424312570595954, lambda2 0.01, upper 0.01, score_min 2.424312570595954, cyc_min 0.0
+2022-04-27 15:22:50,372 INFO - __main__ - before pruning: fdr 0.6, tpr 0.5714285714285714, fpr 2.0, shd 6, nnz 10
+2022-04-27 15:22:50,372 INFO - __main__ - after  pruning: fdr 0.0, tpr 0.14285714285714285, fpr 0.0, shd 6, nnz 1
+2022-04-27 15:22:50,403 INFO - __main__ - [iter 17000] reward_batch: -3.143345594406128, max_reward: -2.925735909137623, max_reward_batch: -3.1433455120417335
+2022-04-27 15:23:03,938 INFO - __main__ - [iter 17500] reward_batch: -3.143345594406128, max_reward: -2.925735909137623, max_reward_batch: -3.1433455120417335
+2022-04-27 15:23:17,706 INFO - __main__ - [iter 18000] lambda1 2.424312570595954, upper 2.424312570595954, lambda2 0.01, upper 0.01, score_min 2.424312570595954, cyc_min 0.0
+2022-04-27 15:23:17,709 INFO - __main__ - before pruning: fdr 0.6, tpr 0.5714285714285714, fpr 2.0, shd 6, nnz 10
+2022-04-27 15:23:17,709 INFO - __main__ - after  pruning: fdr 0.0, tpr 0.14285714285714285, fpr 0.0, shd 6, nnz 1
+2022-04-27 15:23:17,739 INFO - __main__ - [iter 18000] reward_batch: -3.143345594406128, max_reward: -2.925735909137623, max_reward_batch: -3.1433455120417335
+2022-04-27 15:23:31,280 INFO - __main__ - [iter 18500] reward_batch: -3.143345594406128, max_reward: -2.925735909137623, max_reward_batch: -3.1433455120417335
+2022-04-27 15:23:45,021 INFO - __main__ - [iter 19000] lambda1 2.424312570595954, upper 2.424312570595954, lambda2 0.01, upper 0.01, score_min 2.424312570595954, cyc_min 0.0
+2022-04-27 15:23:45,024 INFO - __main__ - before pruning: fdr 0.6, tpr 0.5714285714285714, fpr 2.0, shd 6, nnz 10
+2022-04-27 15:23:45,024 INFO - __main__ - after  pruning: fdr 0.0, tpr 0.14285714285714285, fpr 0.0, shd 6, nnz 1
+2022-04-27 15:23:45,053 INFO - __main__ - [iter 19000] reward_batch: -3.143345594406128, max_reward: -2.925735909137623, max_reward_batch: -3.1433455120417335
+2022-04-27 15:23:58,606 INFO - __main__ - [iter 19500] reward_batch: -3.143345594406128, max_reward: -2.925735909137623, max_reward_batch: -3.1433455120417335
+2022-04-27 15:24:12,358 INFO - __main__ - [iter 20000] lambda1 2.424312570595954, upper 2.424312570595954, lambda2 0.01, upper 0.01, score_min 2.424312570595954, cyc_min 0.0
+2022-04-27 15:24:12,361 INFO - __main__ - before pruning: fdr 0.6, tpr 0.5714285714285714, fpr 2.0, shd 6, nnz 10
+2022-04-27 15:24:12,361 INFO - __main__ - after  pruning: fdr 0.0, tpr 0.14285714285714285, fpr 0.0, shd 6, nnz 1
+2022-04-27 15:24:12,391 INFO - __main__ - [iter 20000] reward_batch: -3.143345594406128, max_reward: -2.925735909137623, max_reward_batch: -3.1433455120417335
+2022-04-27 15:24:12,880 WARNING - tensorflow - Issue encountered when serializing variables.
+Type is unsupported, or the types of the items don't match field type in CollectionDef. Note this is a warning and probably safe to ignore.
+tf.float32 has type DType, but expected one of: int, long, bool
+2022-04-27 15:24:12,881 WARNING - tensorflow - Issue encountered when serializing trainable_variables.
+Type is unsupported, or the types of the items don't match field type in CollectionDef. Note this is a warning and probably safe to ignore.
+tf.float32 has type DType, but expected one of: int, long, bool
+2022-04-27 15:24:13,042 INFO - __main__ - Model saved in file: output/synthetic_n5_e12/model/tmp.ckpt-20000
+2022-04-27 15:24:13,042 INFO - __main__ - Training COMPLETED !
+2022-04-27 15:24:13,285 WARNING - tensorflow - Issue encountered when serializing variables.
+Type is unsupported, or the types of the items don't match field type in CollectionDef. Note this is a warning and probably safe to ignore.
+tf.float32 has type DType, but expected one of: int, long, bool
+2022-04-27 15:24:13,286 WARNING - tensorflow - Issue encountered when serializing trainable_variables.
+Type is unsupported, or the types of the items don't match field type in CollectionDef. Note this is a warning and probably safe to ignore.
+tf.float32 has type DType, but expected one of: int, long, bool
