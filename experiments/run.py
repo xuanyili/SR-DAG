@@ -121,60 +121,49 @@ if __name__ == '__main__':
     
         logger.info("gobnilpBIC  acc:{}, exec time:{}, BIC score:{}".format(acc_gobnilp_bic, exec_time, score.sum()))
 
-    #bnsl_rl BDeu
-    if model == 'bnrl_bdeu':
+    #SR-DAG BDeu
+    if model == 'sr_bdeu':
         start = time.time()
         os.system("python ../main.py --data {} --nodes_num {} --exp --store --batch_size 10".format(data, len(datadf.columns)))
         end = time.time()
         exec_time = (end - start)
-        g_bnrl_bdeu = np.load("result/DAG_bnsl_rl.npy", allow_pickle = True)
+        g_bnrl_bdeu = np.load("result/SR-DAG.npy", allow_pickle = True)
         acc_bnrl_bdeu = count_accuracy(true_g, g_bnrl_bdeu)
         score = reward_bdeu.compute_score(torch.tensor(g_bnrl_bdeu.T))
-        logger.info("BNRLBDeu    acc:{}, exec time:{}, BDeu score:{}".format(acc_bnrl_bdeu, exec_time, score.sum()))
+        logger.info("SRDAG BDeu  acc:{}, exec time:{}, BDeu score:{}".format(acc_bnrl_bdeu, exec_time, score.sum()))
     
-    #bnsl_rl BDeu
-    if model == 'bnrl_bdeu_mask':
+    #SR-DAG BDeu
+    if model == 'sr_bdeu_mask':
         start = time.time()
         os.system("python ../main.py --data {} --nodes_num {} --exp --store --batch_size 10 --mask".format(data, len(datadf.columns)))
         end = time.time()
         exec_time = (end - start)
-        g_bnrl_bdeu = np.load("result/DAG_bnsl_rl.npy", allow_pickle = True)
+        g_bnrl_bdeu = np.load("result/SR-DAG.npy", allow_pickle = True)
         acc_bnrl_bdeu = count_accuracy(true_g, g_bnrl_bdeu)
         score = reward_bdeu.compute_score(torch.tensor(g_bnrl_bdeu.T))
-        logger.info("BNRLBDeu    acc:{}, exec time:{}, BDeu score:{}".format(acc_bnrl_bdeu, exec_time, score.sum()))
+        logger.info("SRDAG BDeu  acc:{}, exec time:{}, BDeu score:{}".format(acc_bnrl_bdeu, exec_time, score.sum()))
 
-    #bnsl_rl BIC
-    if model == 'bnrl_bic_mask':
+    #SR-DAG BIC
+    if model == 'sr_bic_mask':
         start = time.time()
         os.system("python ../main.py --data {} --nodes_num {} --score BIC --exp --batch_size 10 --mask".format(data, len(datadf.columns)))
         end = time.time()
         exec_time = (end - start)
-        g_bnrl_bic = np.load("result/DAG_bnsl_rl.npy", allow_pickle = True)
+        g_bnrl_bic = np.load("result/SR-DAG.npy", allow_pickle = True)
         acc_bnrl_bic = count_accuracy(true_g, g_bnrl_bic)
         score = reward_bic.compute_score(torch.tensor(g_bnrl_bic.T))
-        logger.info("BNRL BIC M  acc:{}, exec time:{}, BIC score:{}".format(acc_bnrl_bic, exec_time, score.sum()))
+        logger.info("SRDAG BIC M acc:{}, exec time:{}, BIC score:{}".format(acc_bnrl_bic, exec_time, score.sum()))
 
-    #bnsl_rl BIC
-    if model == 'bnrl_bic':
+    #SR-DAG BIC
+    if model == 'sr_bic':
         start = time.time()
         os.system("python ../main.py --data {} --nodes_num {} --score BIC --exp --batch_size 1 --acyc_w 10".format(data, len(datadf.columns)))
         end = time.time()
         exec_time = (end - start)
-        g_bnrl_bic = np.load("result/DAG_bnsl_rl.npy", allow_pickle = True)
+        g_bnrl_bic = np.load("result/SR-DAG.npy", allow_pickle = True)
         acc_bnrl_bic = count_accuracy(true_g, g_bnrl_bic)
         score = reward_bic.compute_score(torch.tensor(g_bnrl_bic.T))
-        logger.info("BNRL BIC    acc:{}, exec time:{}, BIC score:{}".format(acc_bnrl_bic, exec_time, score.sum()))
-
-    #bnsl_rl GuassBIC
-    if model == 'bnrl_ctbic':
-        start = time.time()
-        os.system("python ../main.py --data {} --nodes_num {} --score BIC --exp --valid --batch_size 1 --acyc_w 10".format(data, len(datadf.columns)))
-        end = time.time()
-        exec_time = (end - start)
-        g_bnrl_bic = np.load("result/DAG_bnsl_rl.npy", allow_pickle = True)
-        acc_bnrl_bic = count_accuracy(true_g, g_bnrl_bic)
-        score = reward_bic.compute_score(torch.tensor(g_bnrl_bic.T))
-        logger.info("BNRL BIC    acc:{}, exec time:{}, BIC score:{}".format(acc_bnrl_bic, exec_time, score.sum()))
+        logger.info("SRDAG BIC   acc:{}, exec time:{}, BIC score:{}".format(acc_bnrl_bic, exec_time, score.sum()))
 
     #notear
     if model == 'notear':

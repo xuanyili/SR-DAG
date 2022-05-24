@@ -69,8 +69,8 @@ class TrainModel:
         # self.actor_optim   = optim.SGD(model.actor.parameters(), lr=1e-2)
         self.max_grad_norm = max_grad_norm
         
-        self.train_tour = []
-        self.val_tour   = []
+        self.train_dag = []
+        self.val_dag   = []
         self.losses = []
         self.USE_CUDA = USE_CUDA
         self.epochs = 0
@@ -240,7 +240,7 @@ class TrainModel:
                 #     max_actions = actions_idxs
                 # max_reward = max_reward.detach()
 
-                self.train_tour.append(R.data.sum(1).mean())
+                self.train_dag.append(R.data.sum(1).mean())
                 self.losses.append(actor_loss.item())
 
                 if (batch_id+1) % 100 == 0:
@@ -269,7 +269,7 @@ class TrainModel:
                 #         inputs = inputs.cuda()
 
                 #         R, probs, actions_idxs = self.model(inputs)
-                #         self.val_tour.append(R.data.mean())
+                #         self.val_dag.append(R.data.mean())
                     if first == False and max_tmp == max_reward.sum():
                         count += 1
                     else:
@@ -290,8 +290,8 @@ class TrainModel:
         clear_output(True)
         plt.figure(figsize=(20,5))
         plt.subplot(1,2,1)
-        plt.title('Score: epoch %s reward %s' % (epoch, self.train_tour[-1] if len(self.train_tour) else 'collecting'))
-        plt.plot(self.train_tour)
+        plt.title('Score: epoch %s reward %s' % (epoch, self.train_dag[-1] if len(self.train_dag) else 'collecting'))
+        plt.plot(self.train_dag)
         plt.grid()
         plt.subplot(1,2,2)
         plt.title('Score: epoch %s loss %s' % (epoch, self.losses[-1] if len(self.losses) else 'collecting'))
@@ -303,8 +303,8 @@ class TrainModel:
         clear_output(True)
         plt.figure(figsize=(20,5))
         plt.subplot(1,2,1)
-        plt.title('Score: epoch %s reward %s' % (epoch, self.train_tour[-1] if len(self.train_tour) else 'collecting'))
-        plt.plot(self.train_tour)
+        plt.title('Score: epoch %s reward %s' % (epoch, self.train_dag[-1] if len(self.train_dag) else 'collecting'))
+        plt.plot(self.train_dag)
         plt.grid()
         plt.subplot(1,2,2)
         plt.title('Score: epoch %s loss %s' % (epoch, self.losses[-1] if len(self.losses) else 'collecting'))

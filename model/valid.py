@@ -58,8 +58,8 @@ class ValidModel:
         self.actor_optim   = optim.Adam(model.actor.parameters(), lr=1e-4)
         self.max_grad_norm = max_grad_norm
         
-        self.valid_tour = []
-        self.val_tour   = []
+        self.valid_dag = []
+        self.val_dag   = []
         self.losses = []
         self.USE_CUDA = USE_CUDA
         self.epochs = 0
@@ -164,7 +164,7 @@ class ValidModel:
                 #     max_actions = actions_idxs
                 # max_reward = max_reward.detach()
 
-                self.valid_tour.append(R.data.sum(1).mean())
+                self.valid_dag.append(R.data.sum(1).mean())
                 self.losses.append(actor_loss.item())
 
                 if (batch_id+1) % 100 == 0:
@@ -189,7 +189,7 @@ class ValidModel:
                 #         inputs = inputs.cuda()
 
                 #         R, probs, actions_idxs = self.model(inputs)
-                #         self.val_tour.append(R.data.mean())
+                #         self.val_dag.append(R.data.mean())
             
                     if max_tmp == max_reward.sum():
                         count += 1
@@ -210,8 +210,8 @@ class ValidModel:
         clear_output(True)
         plt.figure(figsize=(20,5))
         plt.subplot(1,2,1)
-        plt.title('Score: epoch %s reward %s' % (epoch, self.valid_tour[-1] if len(self.valid_tour) else 'collecting'))
-        plt.plot(self.valid_tour)
+        plt.title('Score: epoch %s reward %s' % (epoch, self.valid_dag[-1] if len(self.valid_dag) else 'collecting'))
+        plt.plot(self.valid_dag)
         plt.grid()
         plt.subplot(1,2,2)
         plt.title('Score: epoch %s loss %s' % (epoch, self.losses[-1] if len(self.losses) else 'collecting'))
@@ -223,8 +223,8 @@ class ValidModel:
         clear_output(True)
         plt.figure(figsize=(20,5))
         plt.subplot(1,2,1)
-        plt.title('Score: epoch %s reward %s' % (epoch, self.valid_tour[-1] if len(self.valid_tour) else 'collecting'))
-        plt.plot(self.valid_tour)
+        plt.title('Score: epoch %s reward %s' % (epoch, self.valid_dag[-1] if len(self.valid_dag) else 'collecting'))
+        plt.plot(self.valid_dag)
         plt.grid()
         plt.subplot(1,2,2)
         plt.title('Score: epoch %s loss %s' % (epoch, self.losses[-1] if len(self.losses) else 'collecting'))

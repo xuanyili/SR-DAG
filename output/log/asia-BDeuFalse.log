@@ -1,0 +1,19 @@
+2022-05-24 14:06:52,657 -- INFO: start
+2022-05-24 14:07:26,444 -- DEBUG: epoch: 0, batch id: 99, reward:-9598.8623046875, max reward:-9254.7607421875 mean_losses:401.88707122802737 cyc:0.0
+2022-05-24 14:07:48,067 -- DEBUG: epoch: 0, batch id: 199, reward:-9250.013671875, max reward:-9223.564453125 mean_losses:128.34943771362305 cyc:0.0
+2022-05-24 14:08:08,873 -- DEBUG: epoch: 0, batch id: 299, reward:-9238.5361328125, max reward:-9223.564453125 mean_losses:265.3270660400391 cyc:0.0
+2022-05-24 14:08:29,772 -- DEBUG: epoch: 0, batch id: 399, reward:-9233.8330078125, max reward:-9223.564453125 mean_losses:237.7129699707031 cyc:0.0
+2022-05-24 14:08:50,382 -- DEBUG: epoch: 0, batch id: 499, reward:-9232.5517578125, max reward:-9223.564453125 mean_losses:257.39057006835935 cyc:0.0
+2022-05-24 14:09:10,755 -- DEBUG: epoch: 0, batch id: 599, reward:-9232.4345703125, max reward:-9223.564453125 mean_losses:307.6502151489258 cyc:0.0
+2022-05-24 14:09:10,756 -- INFO: EARLY STOPPAGE!
+2022-05-24 14:09:11,035 -- INFO: max reward:-9223.564453125
+2022-05-24 14:09:11,036 -- INFO: max actions:tensor([[False, False, False, False, False, False, False, False],
+        [False, False, False, False, False, False, False, False],
+        [False, False, False,  True, False, False, False, False],
+        [False, False, False, False, False, False, False, False],
+        [False, False,  True, False, False, False, False, False],
+        [False,  True, False,  True, False, False, False, False],
+        [False, False, False, False, False,  True, False, False],
+        [False, False, False, False,  True,  True, False, False]],
+       device='cuda:0')
+2022-05-24 14:09:11,038 -- INFO: done

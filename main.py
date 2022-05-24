@@ -46,7 +46,7 @@ if __name__ == '__main__':
 
     opt = parser.parse_args()
 
-    # set_seed(opt.seed)
+    set_seed(opt.seed)
     dataset = opt.data
     seq_len = opt.nodes_num
     size = opt.size
@@ -58,10 +58,10 @@ if __name__ == '__main__':
     threshold = opt.threshold
     exp = opt.exp
 
-    os.environ['CUDA_VISIBLE_DEVICES']='1'
+    # os.environ['CUDA_VISIBLE_DEVICES']='1'
 
     formatter = logging.Formatter('%(asctime)s -- %(levelname)s: %(message)s')
-    logger = logging.getLogger('BNSL_RL_LOGGER')
+    logger = logging.getLogger('SR-DAG_LOGGER')
     logger.setLevel(logging.DEBUG)
 
     filelog = logging.FileHandler('output/log/'+ dataset + '-' + score + str(valid) + '.log', 'w')
@@ -115,6 +115,6 @@ if __name__ == '__main__':
         logger.info(acc)
 
     if exp:
-        np.save("result/DAG_bnsl_rl.npy", G.cpu().numpy().T)
+        np.save("result/SR-DAG.npy", G.cpu().numpy().T)
         print(reward.compute_score(G).sum())
     logger.info('done')
